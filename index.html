@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!---------HEADER---------------------------------->
+
     <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -38,6 +40,7 @@
             </li>
           </ul>
         </nav>
+
         <address class="header-contacts">
           <ul class="header-contacts-list">
             <li class="header-contacts-item">
@@ -52,15 +55,94 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="mobile-close-icon" height="8" width="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="nav-menu-mobile">
+              <li>
+                <a class="nav-mobmenu-link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="nav-mobmenu-link" href="./index.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="nav-mobmenu-link" href="./index.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobmenu-address">
+            <ul class="mobmenu-contacts">
+              <li>
+                <a href="tel:+110001111111" class="mobmenu-contact-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mobmenu-contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobmenu-socials">
+            <li class="mobmenu-socials-item">
+              <a href="./index.html" class="mobmenu-socials-link">
+                <svg class="mobmenu-socials-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobmenu-socials-item">
+              <a href="./index.html" class="mobmenu-socials-link">
+                <svg class="mobmenu-socials-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobmenu-socials-item">
+              <a href="./index.html" class="mobmenu-socials-link">
+                <svg class="mobmenu-socials-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobmenu-socials-item">
+              <a href="./index.html" class="mobmenu-socials-link">
+                <svg class="mobmenu-socials-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <main class="page-main">
+      <!---------HERO---------------------------------->
+
       <section class="main-hero">
         <div class="container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
+
+      <!---------OUR STRENGTH---------------------------------->
 
       <section class="main-our-strength">
         <div class="container">
@@ -118,12 +200,18 @@
         </div>
       </section>
 
+      <!---------OUR TEAM--------------------------------------->
+
       <section class="main-our-team">
-        <div class="container">
+        <div class="container conteinersmall">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-list">
             <li class="our-team-item">
               <img
+                srcset="
+                  ./images/1-mark-guerrero.jpg    1x,
+                  ./images/1-mark-guerrero-2x.jpg 2x
+                "
                 src="./images/1-mark-guerrero.jpg"
                 alt="Mark Guerrero in a light blue shirt"
                 width="264"
@@ -166,6 +254,10 @@
             </li>
             <li class="our-team-item">
               <img
+                srcset="
+                  ./images/2-tom-ford.jpg    1x,
+                  ./images/2-tom-ford-2x.jpg 2x
+                "
                 src="./images/2-tom-ford.jpg"
                 alt="Tom Ford in a light blue shirt"
                 width="264"
@@ -208,6 +300,10 @@
             </li>
             <li class="our-team-item">
               <img
+                srcset="
+                  ./images/3-camila-garcia.jpg    1x,
+                  ./images/3-camila-garcia-2x.jpg 2x
+                "
                 src="./images/3-camila-garcia.jpg"
                 alt="Camila Garcia in a pink sweater"
                 width="264"
@@ -250,6 +346,10 @@
             </li>
             <li class="our-team-item">
               <img
+                srcset="
+                  ./images/4-daniel-wilson.jpg    1x,
+                  ./images/4-daniel-wilson-2x.jpg
+                "
                 src="./images/4-daniel-wilson.jpg"
                 alt="Daniel Wilson in a grey sweater"
                 width="264"
@@ -294,6 +394,8 @@
         </div>
       </section>
 
+      <!---------OUR PORTFOLIO---------------------------------->
+
       <section class="main-our-portfolio">
         <div class="container">
           <h2 class="our-portfolio-title">Our Portfolio</h2>
@@ -301,6 +403,10 @@
             <li class="our-portfolio-item">
               <div class="portfolio-item-overlay">
                 <img
+                  srcset="
+                    ./images/our-portfolio-1.jpg    1x,
+                    ./images/our-portfolio-1-2x.jpg 2x
+                  "
                   src="./images/our-portfolio-1.jpg"
                   alt="Screenshots of banking app"
                   width="360"
@@ -320,6 +426,10 @@
             <li class="our-portfolio-item">
               <div class="portfolio-item-overlay">
                 <img
+                  srcset="
+                    ./images/our-portfolio-2.jpg    1x,
+                    ./images/our-portfolio-2-2x.jpg 2x
+                  "
                   src="./images/our-portfolio-2.jpg"
                   alt="Paying with apple pay"
                   width="360"
@@ -339,6 +449,10 @@
             <li class="our-portfolio-item">
               <div class="portfolio-item-overlay">
                 <img
+                  srcset="
+                    ./images/our-portfolio-3.jpg    1x,
+                    ./images/our-portfolio-3-2x.jpg 2x
+                  "
                   src="./images/our-portfolio-3.jpg"
                   alt="Laptop and smartphone"
                   width="360"
@@ -358,6 +472,10 @@
             <li class="our-portfolio-item">
               <div class="portfolio-item-overlay">
                 <img
+                  srcset="
+                    ./images/our-portfolio-4.jpg    1x,
+                    ./images/our-portfolio-4-2x.jpg 2x
+                  "
                   src="./images/our-portfolio-4.jpg"
                   alt="Hands on a stering weel"
                   width="360"
@@ -377,6 +495,10 @@
             <li class="our-portfolio-item">
               <div class="portfolio-item-overlay">
                 <img
+                  srcset="
+                    ./images/our-portfolio-5.jpg    1x,
+                    ./images/our-portfolio-5-2x.jpg 2x
+                  "
                   src="./images/our-portfolio-5.jpg"
                   alt="5 phones with different wallpaper illustrations"
                   width="360"
@@ -396,6 +518,10 @@
             <li class="our-portfolio-item">
               <div class="portfolio-item-overlay">
                 <img
+                  srcset="
+                    ./images/our-portfolio-6.jpg    1x,
+                    ./images/our-portfolio-6-2x.jpg 2x
+                  "
                   src="./images/our-portfolio-6.jpg"
                   alt="Girl in sunglasses and orange sweater looking at phone and smiling"
                   width="360"
@@ -416,6 +542,8 @@
         </div>
       </section>
     </main>
+
+    <!---------FOOTER---------------------------------->
 
     <footer class="page-footer">
       <div class="container footer-wrapper">
@@ -483,7 +611,10 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+
+    <!---------MODAL---------------------------------->
+
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-button-close">
           <svg class="modal-button-icon" width="8" height="8">
@@ -562,11 +693,12 @@
                   <use href="./images/icons.svg#icon-checked"></use>
                 </svg>
               </span>
-
-              I accept the terms and conditions of the
-              <a href="./index.html" class="modal-agreement-link"
-                >Privacy Policy</a
-              >
+              <span class="modal-agreement-text">
+                I accept the terms and conditions of the
+                <a href="./index.html" class="modal-agreement-link"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-submit-button">Send</button>
